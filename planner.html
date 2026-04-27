@@ -2,8 +2,116 @@
 <html>
     <head>
         <title>Planning page</title>
+        <style>
+            .nav-bar{
+                font-size: 20px;
+                font-family: 'Times New Roman', Times, serif;
+                padding: 25px;
+                border-color: linear-gradient(to right, #667eea, #764ba2);
+                border-bottom: #f5f5f5;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                text-decoration: none;
+                color: white;
+                background: linear-gradient(to right, #667eea, #764ba2);
+                margin: 20px;
+                }
+            body {
+                margin: 0;
+                font-family: Arial, sans-serif;
+                width: 100%;
+                background: linear-gradient(to right, #74ebd5, #ACB6E5);
+                color: #333;
+                text-align: center;
+                min-height: 100vh;
+                line-height: 1.4;
+            }
+            table {
+                width: 95%;
+                margin: 15px;
+                border-width: 5px;
+                border-color: #333;
+                border-style: solid;
+            }
+             h1{
+                color: #333;
+                padding: 15px;
+                margin: 0;    
+                text-align: center;
+            }   
+             h2{
+                color: #333;
+                margin: 10px;
+                padding: 10px;
+            } 
+            h3{
+                color: #333;
+                margin: 10px;
+                padding: 10px;
+                font-size: larger;
+            }  
+             p{
+               color: #333;
+               margin: 15px;
+            }
+             footer {
+                text-align: start;
+                padding: 20px;
+                margin: 0;
+                background-color: #f0e6d2;
+                width: 96.7%;
+            }
+            hr {
+                border: none;
+                height: 2px;
+                background-color: #5a3e2b;
+            }
+            a {
+                    text-decoration: none;
+                    color: inherit;
+            }
+            a:hover {
+                color: #f1f4f5;
+            }
+            nav a:hover {
+                color: #ff6f61;
+            }
+            .logo {
+                font-size: 24px;
+                font-weight: bold;
+            }
+            .fottertxt{
+                color: #2b1f17;
+            }
+            td{
+                    border: 1px solid #333;
+                    padding: 8px;
+                    text-align: center;
+            } 
+            th{
+                    border: 1px solid #333;
+                    padding: 8px;
+                    text-align: center;
+                    font-style: bold;
+            }
+        </style>
     </head>
     <body>
+        <nav class="nav-bar">
+                    <div id="link1">
+                        <a href="main.html" class="logo">Smart Study Planner</a>
+                    </div>
+                    <div id="link2">
+                        <a href="planner.html">Planner</a>
+                    </div>
+                    <div id="link3">
+                        <a href="Time table.html">Time Table</Table></a>
+                    </div>
+                    <div id="link4">
+                        <a href="about.html">About</a>
+                    </div>
+            </nav>   
         <h1>Study Plan Result</h1>
         <h2>1. Priority Subject: Math (Total Study Time: 7 hrs)</h2>
 
@@ -24,9 +132,9 @@
     </table>
 
     <h3>Advice & Tips</h3>
-    <p>To master mathematics, you must stop treating it as a memory test. The most effective study method is active derivation. Instead of memorizing a formula, practice deriving it from basic principles; if you understand where a formula comes from, you can never truly "forget" it during an exam. Spend 80% of your time solving problems and only 20% reading the theory. When you get a problem wrong, don’t just look at the solution—re-solve it from scratch three times until the logic is ingrained. Use "spaced repetition" to revisit difficult topics like Calculus or Trigonometry every few days to maintain peak mental speed.</p>
+    <p style="font-size: 15px;">To master mathematics, you must stop treating it as a memory test. The most effective study method is active derivation. Instead of memorizing a formula, practice deriving it from basic principles; if you understand where a formula comes from, you can never truly "forget" it during an exam. Spend 80% of your time solving problems and only 20% reading the theory. When you get a problem wrong, don’t just look at the solution—re-solve it from scratch three times until the logic is ingrained. Use "spaced repetition" to revisit difficult topics like Calculus or Trigonometry every few days to maintain peak mental speed.</p>
 <br>
-    <h2>Priority Subject: Physics (Total Study Time: 7 hrs)</h2>
+    <h2>2. Priority Subject: Physics (Total Study Time: 7 hrs)</h2>
 
     <table border="1">
         <tr>
@@ -45,10 +153,10 @@
     </table>
 
     <h3>Advice & Tips</h3>
-    <p>Physics requires you to bridge the gap between abstract math and reality. For every problem, your first step must be a Free Body Diagram (FBD) or a visual sketch. This forces you to identify all variables before calculating. Secondly, always perform a dimensional analysis; if the units on both sides of your equation don't match, your formula is wrong. Focus on mastering "first principles" like Newton’s Laws or Thermodynamics. Once the core concepts are solid, even the most complex problems become simple applications of these few fundamental rules.</p>
+    <p style="font-size: 15px;">Physics requires you to bridge the gap between abstract math and reality. For every problem, your first step must be a Free Body Diagram (FBD) or a visual sketch. This forces you to identify all variables before calculating. Secondly, always perform a dimensional analysis; if the units on both sides of your equation don't match, your formula is wrong. Focus on mastering "first principles" like Newton’s Laws or Thermodynamics. Once the core concepts are solid, even the most complex problems become simple applications of these few fundamental rules.</p>
 
 <br>
-    <h2>2. Priority Subject: Chemistry (Total Study Time: 6 hrs)</h2>
+    <h2>3. Priority Subject: Chemistry (Total Study Time: 6 hrs)</h2>
 
     <table border="1">
         <tr>
@@ -67,9 +175,9 @@
     </table>
 
     <h3>Advice & Tips</h3>
-    <p>Chemistry is often a "bridge" subject, requiring both math and visualization. For Organic Chemistry, do not memorize reactions; instead, study electron flow and mechanisms. Understand why a nucleophile attacks an electrophile. For Physical Chemistry, focus on the relationships between variables in gas laws and thermodynamics. Use concept maps to link different chapters—for example, see how Atomic Structure leads into Chemical Bonding. In the lab, pay attention to the "why" behind the procedure, as practical understanding often clarifies the theoretical concepts that appear on exams.</p>
+    <p style="font-size: 15px;">Chemistry is often a "bridge" subject, requiring both math and visualization. For Organic Chemistry, do not memorize reactions; instead, study electron flow and mechanisms. Understand why a nucleophile attacks an electrophile. For Physical Chemistry, focus on the relationships between variables in gas laws and thermodynamics. Use concept maps to link different chapters—for example, see how Atomic Structure leads into Chemical Bonding. In the lab, pay attention to the "why" behind the procedure, as practical understanding often clarifies the theoretical concepts that appear on exams.</p>
 <br>
-    <h2>Priority Subject: Computer (Total Study Time: 5 hrs)</h2>
+    <h2>4. Priority Subject: Computer (Total Study Time: 5 hrs)</h2>
     <table border="1" class="comptable">
         <tr>
             <th>S.N</th>
@@ -86,9 +194,9 @@
 
     </table>
     <h3>Advice & Tips</h3>
-    <p>In Computer Science, syntax is secondary to logic and flow. Before writing a single line of code, draft your logic in pseudocode or a flowchart. This prevents logical errors that are difficult to find later. When you encounter a bug, use the "Rubber Duck" method—explain your code line-by-line to an inanimate object to find the flaw. Additionally, read the official documentation of the language you are learning rather than just watching tutorials. Mastering data structures and algorithms is the key; once you understand the underlying logic, switching between programming languages becomes effortless.</p>
+    <p style="font-size: 15px;">In Computer Science, syntax is secondary to logic and flow. Before writing a single line of code, draft your logic in pseudocode or a flowchart. This prevents logical errors that are difficult to find later. When you encounter a bug, use the "Rubber Duck" method—explain your code line-by-line to an inanimate object to find the flaw. Additionally, read the official documentation of the language you are learning rather than just watching tutorials. Mastering data structures and algorithms is the key; once you understand the underlying logic, switching between programming languages becomes effortless.</p>
 <br>
-    <h2>Priority Subject: Biology (Total Study Time: 7 hrs)</h2>
+    <h2>5. Priority Subject: Biology (Total Study Time: 7 hrs)</h2>
 
     <table border="1" class="biotable">
         <tr>
@@ -106,9 +214,9 @@
     </table>
 
     <h3>Advice & Tips</h3>
-    <p>Biology is content-heavy, making rote memorization inefficient. Use Systems Thinking to understand how one organ or cell affects the entire organism. Instead of reading your notes repeatedly, use Active Recall and Anki flashcards for terminology and diagrams. Draw biological processes (like the Krebs Cycle or DNA replication) from memory on a whiteboard until you can explain them without looking at a book. If you can teach the concept to someone else in simple terms (the Feynman Technique), you have truly mastered the complexity of the biological system.</p>    
+    <p style="font-size: 15px;">Biology is content-heavy, making rote memorization inefficient. Use Systems Thinking to understand how one organ or cell affects the entire organism. Instead of reading your notes repeatedly, use Active Recall and Anki flashcards for terminology and diagrams. Draw biological processes (like the Krebs Cycle or DNA replication) from memory on a whiteboard until you can explain them without looking at a book. If you can teach the concept to someone else in simple terms (the Feynman Technique), you have truly mastered the complexity of the biological system.</p>    
 <br>
-    <h2>Priority Subject: English (Total Study Time: 4 hrs)</h2>
+    <h2>6. Priority Subject: English (Total Study Time: 4 hrs)</h2>
 
     <table border="1" class="engtable">
         <tr>
@@ -127,9 +235,9 @@
     </table>
 
     <h3>Advice & Tips</h3>
-    <p>To excel in English, you must move beyond simple reading and focus on critical analysis. When studying literature, don’t just summarize the plot; identify the symbols, tone, and the author’s intent. For language and composition, your priority should be structural flow. Use transitional phrases to link your ideas logically, ensuring each paragraph serves a specific purpose. To improve your vocabulary, don't just memorize definitions—practice using new words in different contexts to understand their nuances. Finally, always leave time for editing. Professional-grade writing is born in the revision process, where you eliminate wordiness and sharpen your arguments for maximum impact.</p>
+    <p style="font-size: 15px;">To excel in English, you must move beyond simple reading and focus on critical analysis. When studying literature, don’t just summarize the plot; identify the symbols, tone, and the author’s intent. For language and composition, your priority should be structural flow. Use transitional phrases to link your ideas logically, ensuring each paragraph serves a specific purpose. To improve your vocabulary, don't just memorize definitions—practice using new words in different contexts to understand their nuances. Finally, always leave time for editing. Professional-grade writing is born in the revision process, where you eliminate wordiness and sharpen your arguments for maximum impact.</p>
 <br>
-    <h2>Priority Subject: Nepali (Total Study Time: 4 hrs)</h2>
+    <h2>7. Priority Subject: Nepali (Total Study Time: 4 hrs)</h2>
 
     <table border="1">
         <tr>
@@ -148,11 +256,22 @@
     </table>
 
     <h3>Advice & Tips</h3>
-    <p>To excel in Nepali, focus on Grammar (Byakaran) and Sentence Structure. Many students lose marks on simple spelling errors or incorrect verb tenses. Practice writing essays by focusing on a clear introduction, body, and conclusion, ensuring your vocabulary is diverse yet appropriate for the context. For literature, don't just read the stories; analyze the themes and social context of the era in which they were written. Regular reading of Nepali editorials will improve your formal writing style and help you develop a sophisticated "Shruti Sambhinnarthak" (homophone) awareness, which is essential for high-level scoring.</p>   
+    <p style="font-size: 15px;">To excel in Nepali, focus on Grammar (Byakaran) and Sentence Structure. Many students lose marks on simple spelling errors or incorrect verb tenses. Practice writing essays by focusing on a clear introduction, body, and conclusion, ensuring your vocabulary is diverse yet appropriate for the context. For literature, don't just read the stories; analyze the themes and social context of the era in which they were written. Regular reading of Nepali editorials will improve your formal writing style and help you develop a sophisticated "Shruti Sambhinnarthak" (homophone) awareness, which is essential for high-level scoring.</p>   
 <br>
     <footer>
-        <hr>
-        <p>© 2026 Smart Study Planner Team | Designed for educational purposes</p>
-    </footer>
+            <hr>
+                <h3 class="fottertxt">Contact Us</h3>
+                <p>Email: smartstudyplanner@gmail.com</p>
+                <p>Phone: +977-9812345678</p>
+                <p>Address: Kathmandu, Nepal</p>
+                <p>
+                <a href="main.html">Home</a> |
+                <a href="planner.html">Planner</a> |
+                <a href="timetable.html">Timetable</a> |
+                <a href="about.html">About</a>
+                </p>
+
+                <p>© 2026 Smart Study Planner Team | For educational purposes</p>
+            </footer>
 </body>
 </html>
